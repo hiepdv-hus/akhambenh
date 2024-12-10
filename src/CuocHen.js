@@ -3,13 +3,16 @@ const DatLichKham = () => {
   return (
     <div className="cuochen mt-5 mb-5">
       <div className="container">
-      <select class="form-select mb-4" aria-label="Default select example">
-                        <option selected>Hôm nay - 11/12</option>
-                        <option value="1">Thứ 5 - 12/12</option>
-                        <option value="2">Thứ 6 - 12/12</option>
-                        <option value="3">Thứ 7 - 12/12</option>
-                        <option value="3">Bỏ qua</option>
-                    </select>
+        <div className="row mb-4">
+            <div className="col-md-6 col-6">
+                <p><b>Ngày bắt đầu</b></p>
+                <input type="date" className="form-control mt-3" placeholder="Ngày bắt đầu"/>
+            </div>
+            <div className="col-md-6 col-6">
+                <p><b>Ngày kết thúc</b></p>
+                <input type="date" className="form-control mt-3" placeholder="Ngày kết thúc"/>
+            </div>
+        </div>
 
       <table class="table table-bordered">
         <thead>
