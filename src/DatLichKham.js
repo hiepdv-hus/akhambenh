@@ -93,7 +93,6 @@ const DatLichKham = () => {
                         <button className="btn btn-warning w-100 mt-4">Xác nhận đặt khám</button>
                     </Link>
                 </div>
-                </div>
             </div>
         </div>
       </div>
