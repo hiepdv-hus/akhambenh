@@ -33,7 +33,7 @@ const DatLichKham = () => {
                 </div>
                 <div className="mt-3 mb-3">Chọn và đặt (Phí đặt lịch 0đ)</div>
                 <hr/>
-                <div className="mt-3 mb-3">
+                {/* <div className="mt-3 mb-3">
                     <div className="d-flex">
                         <img style={{borderRadius: '50%'}} width={'100'} height={'100'} src="https://cdn.bookingcare.vn/fo/w256/2024/02/02/144127-bs-hoe1.jpg"/>
                         <div className="ms-3">
@@ -44,6 +44,7 @@ const DatLichKham = () => {
                             <p><b>GIÁ KHÁM:</b> 50.000Đ</p>
                         </div>
                     </div>
+                </div> */}
                 <div className="mt-3 mb-3">
                     <input name={'1'} type="radio" checked/> Đặt cho mình
                     <input name={'1'} className="ms-5" type="radio"/> Đặt người thân
