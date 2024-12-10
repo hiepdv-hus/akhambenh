@@ -58,15 +58,20 @@ code {
     background-color: gainsboro;
     padding: 4px;
     text-align: center;
-    border: 1px solid gainsboro;
+    border: 2px solid gainsboro;
     cursor: pointer;
 }
-
+.giokham-item.active {
+  background-color: gainsboro;
+  padding: 4px;
+  text-align: center;
+  border: 2px solid rgb(112, 143, 201);
+}
 .giokham-item:hover {
   background-color: gainsboro;
   padding: 4px;
   text-align: center;
-  border: 1px solid rgb(112, 143, 201);
+  border: 2px solid rgb(112, 143, 201);
 }
 
 .hinhthuc-thanhtoan {

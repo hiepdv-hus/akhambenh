@@ -1,5 +1,29 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const DatLichKham = () => {
+    const [selectedTime, setSelectedTime] = useState(null); // Lưu khung giờ được chọn
+
+  const times = [
+    "09:00 - 09:30",
+    "09:30 - 10:00",
+    "10:00 - 10:30",
+    "10:30 - 11:00",
+    "11:00 - 11:30",
+    "11:30 - 12:00",
+    "12:30 - 13:00",
+    "13:00 - 13:30",
+    "13:30 - 14:00",
+    "14:00 - 14:30",
+    "14:30 - 15:00",
+  ];
+
+  const handleClick = (time) => {
+    setSelectedTime(time); // Cập nhật khung giờ được chọn
+  };
+
+  const handleConfirm = () => {
+    alert('Đặt lịch khám thành công!')
+  }
   return (
     <div className="datlichkham mt-5 mb-5">
       <div className="container">
@@ -19,18 +43,16 @@ const DatLichKham = () => {
                     <h6 className="m-0 ms-2">LỊCH KHÁM</h6>
                 </div>
                 <div className="giokham">
-                    <div className="giokham-item">09:00 - 09:30</div>
-                    <div className="giokham-item">09:30 - 10:00</div>
-                    <div className="giokham-item">10:00 - 10:30</div>
-                    <div className="giokham-item">10:30 - 11:00</div>
-                    <div className="giokham-item">11:00 - 11:30</div>
-                    <div className="giokham-item">11:30 - 12:00</div>
-                    <div className="giokham-item">12:30 - 13:00</div>
-                    <div className="giokham-item">13:00 - 13:30</div>
-                    <div className="giokham-item">13:30 - 14:00</div>
-                    <div className="giokham-item">14:00 - 14:30</div>
-                    <div className="giokham-item">14:30 - 15:00</div>
-                </div>
+      {times.map((time, index) => (
+        <div
+          key={index}
+          className={`giokham-item ${selectedTime === time ? "active" : ""}`} // Thêm class "active" nếu khung giờ được chọn
+          onClick={() => handleClick(time)} // Xử lý click
+        >
+          {time}
+        </div>
+      ))}
+    </div>
                 <div className="mt-3 mb-3">Chọn và đặt (Phí đặt lịch 0đ)</div>
                 <hr/>
                 {/* <div className="mt-3 mb-3">
@@ -89,9 +111,7 @@ const DatLichKham = () => {
                             <div className="text-danger">500.000Đ</div>
                         </div>
                     </div>
-                    <Link to="/cuoc-hen">
-                        <button className="btn btn-warning w-100 mt-4">Xác nhận đặt khám</button>
-                    </Link>
+                    <button className="btn btn-warning w-100 mt-4" onClick={handleConfirm}>Xác nhận đặt khám</button>
                 </div>
             </div>
         </div>

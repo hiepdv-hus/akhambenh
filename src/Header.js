@@ -21,8 +21,11 @@ const Header = () => {
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
+              <Link to="/cuoc-hen">
+                <button className="btn btn-outline-dark">Thống kê lịch hẹn</button>
+              </Link>
               <Link to="/dat-lich-kham">
-                <button className="btn btn-outline-success" type="submit">Đặt lịch khám</button>
+                <button className="btn btn-outline-success ms-3" type="submit">Đặt lịch khám</button>
               </Link>
             </form>
           </div>
