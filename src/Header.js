@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./images/logo-BK.png"
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header classNameName="header m-auto">
@@ -16,11 +17,13 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item active">
-                <div className="nav-link">Trang chủ</div>
+                <Link to="/"><div className="nav-link">Trang chủ</div></Link>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
-              <button className="btn btn-outline-success" type="submit">Đặt lịch khám</button>
+              <Link to="/dat-lich-kham">
+                <button className="btn btn-outline-success" type="submit">Đặt lịch khám</button>
+              </Link>
             </form>
           </div>
         </div>

@@ -48,3 +48,30 @@ code {
 .logo-img {
   border-radius: 50%;
 }
+.giokham {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 115px);
+  gap: 10px;
+}
+.giokham-item {
+    background-color: gainsboro;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+.giokham-item:hover {
+  background-color: gainsboro;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid rgb(112, 143, 201);
+}
+
+.hinhthuc-thanhtoan {
+  background-color: gainsboro;
+  padding: 15px 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
