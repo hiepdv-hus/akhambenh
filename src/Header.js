@@ -1,12 +1,12 @@
 import React from "react";
-
+import Logo from "./images/logo-BK.png"
 const Header = () => {
   return (
     <header classNameName="header m-auto">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <div className="navbar-brand">
-          <img style={{ width: '50px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2eYRbcnDYfSHqf6Xy4jjAe1iXEl1zF0aCA&s" alt="Logo" />
+          <img className="logo-img" style={{ width: '50px' }} src={Logo} alt="Logo" />
 
           </div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
