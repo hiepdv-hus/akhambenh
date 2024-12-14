@@ -11,6 +11,8 @@ import Home3 from "../images/home-3.png"
 import Home4 from "../images/home-4.png"
 import Home5 from "../images/home-5.png"
 import Home6 from "../images/home-6.png"
+
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -21,10 +23,12 @@ const Home = () => {
                     GRACEFUL TOUCHES, <br/>
                     INSPIRED BY YOU
                 </h1>
-                <div className="jetztBuchen">
-                    Jetzt buchen
-                    <img src={ArrowRight} width={'22'}/>
-                </div>
+                <Link to="/product">
+                    <div className="jetztBuchen">
+                        Jetzt buchen
+                        <img src={ArrowRight} width={'22'}/>
+                    </div>
+                </Link>
             </div>
         </section>
         <section>

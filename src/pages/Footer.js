@@ -1,4 +1,4 @@
-import "./Footer.css"
+
 import LogoFooter from "../images/Logo-footer.png"
 import MapPin from "../images/MapPin.png"
 import Email from "../images/EnvelopeSimple.png"
