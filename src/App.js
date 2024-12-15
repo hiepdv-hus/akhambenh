@@ -15,7 +15,7 @@ function App() {
     return (
       <>
         <Header />
-        <div>
+        <div style={{marginTop: '88px'}}>
           <main className="mx-auto">
             {/* Đây là nơi nội dung động hiển thị */}
             <Outlet />

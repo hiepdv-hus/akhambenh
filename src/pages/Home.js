@@ -33,24 +33,27 @@ const Home = () => {
         </section>
         <section>
             <div className="care">
-                <div className="container">
-                    <div className="row">
-                    <div className="col-md-6 m-md-0 p-md-0 d-flex">
-                        <div className="care-left">
+                <div className="">
+                    <div className="care-row">
+                    <div className="care-column-left">
+                        <div className="care-left w-100">
                             <div className="care-left-txt">Strahlende Schönheit, neu definiert – nur für Sie. </div>
-                            <img src={Care} width={'100%'}/>
+                            <img className="care-left-img" src={Care}/>
                         </div>
                     </div>
-                    <div className="col-md-6 m-md-0 p-md-0 d-flex">
-                        <div className="care-right text-center">
-                            <img src={CareLogo} width={'240'}/>
-                            <div className="care-right-title mt-2">
-                                Mit Herz und Leidenschaft
-                            </div>
-                            <div className="care-right-txt mt-2">
-                                Bei Terra Beauty & Care, feiern wir Ihre natürliche Schönheit. Unser Team kombiniert moderne Techniken mit individueller Pflege für revitalisierende Gesichtsbehandlungen, elegante Nägel und entspannende Massagen – ganz auf Sie abgestimmt.
+                    <div className="care-column-left-right">
+                        <div className="care-right">
+                            <div className=" text-center">
+                                <img src={CareLogo} width={'240'}/>
+                                <div className="care-right-title mt-2">
+                                    Mit Herz und Leidenschaft
+                                </div>
+                                <div className="care-right-txt mt-2">
+                                    Bei Terra Beauty & Care, feiern wir Ihre natürliche Schönheit. Unser Team kombiniert moderne Techniken mit individueller Pflege für revitalisierende Gesichtsbehandlungen, elegante Nägel und entspannende Massagen – ganz auf Sie abgestimmt.
+                                </div>
                             </div>
                         </div>
+                        <div></div>
                     </div>
                     </div>
                 </div>
@@ -172,7 +175,7 @@ const Home = () => {
                     Entdecken Sie unsere beliebtesten Dienstleistungen für Qualität und Ergebnisse.
                 </div>
             </div>
-            <div className="container-fluid mb-5">
+            <div className="container mb-5">
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -183,144 +186,144 @@ const Home = () => {
                         <div className="carousel-item active">
                             <div className="product-lst">
                                 <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home1} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
+                                    <div className="slider-row">
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home1} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
                                                 </div>
-                                                <div className="button">
-                                                    Termin
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home2} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home3} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home4} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home2} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home3} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home4} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className="product-lst">
                                 <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home5} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
+                                    <div className="slider-row">
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home1} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
                                                 </div>
-                                                <div className="button">
-                                                    Termin
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home2} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home3} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="slider-column d-flex">
+                                            <div className="product-item w-100">
+                                                <img className="product-item-img" src={Home4} />
+                                                <div className="product-item-content text-center">
+                                                    <div className="title">Service title</div>
+                                                    <div className="txt">200€</div>
+                                                    <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                        <img className="me-1" src={Clock} width={'24'}/>
+                                                        45 min
+                                                    </div>
+                                                    <div className="button">
+                                                        Termin
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home6} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home3} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-6 d-flex">
-                                        <div className="product-item">
-                                            <img className="product-item-img" src={Home4} />
-                                            <div className="product-item-content text-center">
-                                                <div className="title">Service title</div>
-                                                <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
-                                                    45 min
-                                                </div>
-                                                <div className="button">
-                                                    Termin
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>

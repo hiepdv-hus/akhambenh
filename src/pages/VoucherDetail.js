@@ -18,7 +18,7 @@ const VoucherDetail = () => {
                 </div>
             </section>
             <section className="container">
-                <div className="product-text mt-5 pt-5">
+                <div className="product-text marginY-detail">
                 Startseite / Gutscheine / <span style={{color: '#626664'}}>Classic manicure</span>
                 </div>
                 <div className="row mt-5">

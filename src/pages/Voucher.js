@@ -86,8 +86,8 @@ const Voucher = () => {
                                             <div className="product-item-content text-center">
                                                 <div className="title">Service title</div>
                                                 <div className="txt">200€</div>
-                                                <div className="txt">
-                                                    <img src={Clock} width={'24'}/>
+                                                <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
+                                                    <img className="me-1" src={Clock} width={'24'}/>
                                                     45 min
                                                 </div>
                                                 <div className="button">

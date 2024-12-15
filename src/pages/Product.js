@@ -68,7 +68,7 @@ const Product = () => {
             <section className="container">
                 <div div className="product-container">
                     <div className="d-flex justify-content-between align-items-center">
-                        <div className="product-text">
+                        <div style={{padding: '0 24px'}} className="product-text">
                             Startseite / Dienstleistungen / <span style={{color: '#626664'}}>Alle Produkte</span>
                         </div>
                         <div className="product-sort">
@@ -76,8 +76,8 @@ const Product = () => {
                             <img className="ms-2" src={SortAscending} width={'20px'}/>
                         </div>
                     </div>
-                    <div className="row mt-5">
-                        <div className="col-md-4">
+                    <div className="product-row mt-5">
+                        <div className="product-column-left">
                             <div className="product-menu">
                                 <div className="product-title">
                                     Alle Produkte (20)
@@ -128,8 +128,7 @@ const Product = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-1"></div>
-                        <div className="col-md-7">
+                        <div className="product-column-right">
                             <div className="row">
                                 {dataProduct.length > 0 && dataProduct.map((product, index) => {
                                     return (

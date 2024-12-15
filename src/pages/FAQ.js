@@ -76,8 +76,8 @@ const FAQ = () => {
                     <div className="col-md-8">
                         <div className="d-flex justify-content-between fag-fragen align-items-center">
                             <div>
-                                <div className="faq-label mt-2">Haben Sie noch Fragen?</div>
-                                <div className="faq-txt mt-2">Können Sie die Antwort, die Sie suchen, nicht finden? Chatten Sie mit unserem <br/> freundlichen Team.</div>
+                                <div className="faq-label">Haben Sie noch Fragen?</div>
+                                <div className="faq-txt">Können Sie die Antwort, die Sie suchen, nicht finden? Chatten Sie mit unserem <br/> freundlichen Team.</div>
                             </div>
                             <div className="faq-button">Kontaktieren</div>
                         </div>
