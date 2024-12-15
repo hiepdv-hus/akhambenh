@@ -3,9 +3,16 @@ import Map from "../images/contact-map.png"
 
 const Contact = () => {
     return (
-        <div className="contact" style={{paddingTop: '40px'}}>
+        <div className="contact">
+            <section className="product-banner">
+                <div className="container">
+                    <h1 className="heading">
+                        Kontaktieren Sie uns
+                    </h1>
+                </div>
+            </section>
             <div className="container">
-                <div className="row mt-3">
+                <div className="row mt-5">
                     <div className="col-lg-6 pt-5 pb-5">
                         <div className="contact-title">Nehmen Sie Kontakt auf</div>
                         <div className="contact-title-txt mt-3">
