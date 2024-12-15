@@ -15,24 +15,24 @@ const Contact = () => {
                 <div className="row mt-5">
                     <div className="col-lg-6 pt-5 pb-5">
                         <div className="contact-title">Nehmen Sie Kontakt auf</div>
-                        <div className="contact-title-txt mt-3">
+                        <div className="contact-title-txt" style={{marginTop: '12px'}}>
                             Wir sind hier, um zu helfen! Kontaktieren Sie uns bei Fragen, Feedback oder Terminwünschen. Unser Team steht bereit, um Ihnen zu helfen.
                         </div>
-                        <div className="d-flex align-items-center  mt-4">
+                        <div className="d-flex align-items-center"  style={{marginTop: '36px'}}>
                             <img width={'52'} src={Position}/>
                             <div className="ms-3">
                                 <div className="contact-label">Adresse</div>
                                 <div className="contact-txt">Roßmarkt 23, 60311 Frankfurt am Main</div>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center  mt-3">
+                        <div className="d-flex align-items-center"   style={{marginTop: '24px'}}>
                             <img width={'52'} src={Position}/>
                             <div className="ms-3">
                                 <div className="contact-label">Adresse</div>
                                 <div className="contact-txt">Roßmarkt 23, 60311 Frankfurt am Main</div>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center  mt-3">
+                        <div className="d-flex align-items-center"   style={{marginTop: '24px'}}>
                             <img width={'52'} src={Position}/>
                             <div className="ms-3">
                                 <div className="contact-label">Adresse</div>

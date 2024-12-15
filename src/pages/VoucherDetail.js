@@ -21,11 +21,11 @@ const VoucherDetail = () => {
                 <div className="product-text marginY-detail">
                 Startseite / Gutscheine / <span style={{color: '#626664'}}>Classic manicure</span>
                 </div>
-                <div className="row mt-5">
-                    <div className="col-md-6">
+                <div className="voucher-detail-row mt-5">
+                    <div className="voucher-detail-column">
                         <img className="object-cover w-100" height={'640'} src={VoucherImg} />
                     </div>
-                    <div className="col-md-6">
+                    <div className="voucher-detail-column">
                         <div className="productDetail-title">Spa Gift Experience</div>
                         <div className="productDetail-price">$200</div>
                         <div className="productDetail-time">

@@ -9,8 +9,7 @@ import Home1 from "../images/home-1.png"
 import Home2 from "../images/home-2.png"
 import Home3 from "../images/home-3.png"
 import Home4 from "../images/home-4.png"
-import Home5 from "../images/home-5.png"
-import Home6 from "../images/home-6.png"
+import Chip from "../images/Chip.png"
 
 import { Link } from "react-router-dom";
 const Home = () => {
@@ -187,7 +186,10 @@ const Home = () => {
                             <div className="product-lst">
                                 <div className="container">
                                     <div className="slider-row">
-                                        <div className="slider-column d-flex">
+                                        <div className="slider-column d-flex position-relative">
+                                            <img style={{top: '16px', left: '16px'}} 
+                                            className="position-absolute" 
+                                            src={Chip} width={'99'} height={'30'}/>
                                             <div className="product-item w-100">
                                                 <img className="product-item-img" src={Home1} />
                                                 <div className="product-item-content text-center">
@@ -235,7 +237,10 @@ const Home = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="slider-column d-flex">
+                                        <div className="slider-column d-flex position-relative">
+                                            <img style={{top: '16px', left: '16px'}} 
+                                            className="position-absolute" 
+                                            src={Chip} width={'99'} height={'30'}/>
                                             <div className="product-item w-100">
                                                 <img className="product-item-img" src={Home4} />
                                                 <div className="product-item-content text-center">

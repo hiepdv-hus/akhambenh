@@ -608,9 +608,23 @@ input:-ms-input-placeholder {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 12px;
 }
+.voucher-detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 56px;
+}
+.contact-form input {
+  height: 40px;
+}
 @media screen and (max-width: 991px) {
   .footer-lst {
     grid-template-columns: 1fr 1fr;
+  }
+  .voucher-detail-row {
+    grid-template-columns: 1fr;
+  }
+  .product-row {
+    display: block;
   }
   
 .carousel-control-prev {

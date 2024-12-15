@@ -7,17 +7,20 @@ import Home4 from "../images/home-4.png"
 import Home5 from "../images/home-5.png"
 import Home6 from "../images/home-6.png"
 import { useNavigate } from "react-router-dom";
+import Chip from "../images/Chip.png"
 
 const Product = () => {
     const navigate = useNavigate();
     const dataProduct = [
         {
             id: 1,
-            img: Home1
+            img: Home1,
+            sale: true
         },
         {
             id: 2,
-            img: Home2
+            img: Home2,
+            sale: true
         },
         {
             id: 3,
@@ -29,7 +32,8 @@ const Product = () => {
         },
         {
             id: 5,
-            img: Home5
+            img: Home5,
+            sale: true
         },
         {
             id: 6,
@@ -37,7 +41,8 @@ const Product = () => {
         },
         {
             id: 7,
-            img: Home1
+            img: Home1,
+            sale: true
         },
         {
             id: 8,
@@ -133,7 +138,10 @@ const Product = () => {
                                 {dataProduct.length > 0 && dataProduct.map((product, index) => {
                                     return (
                                         <div key={index} className="col-lg-4 col-md-6 d-flex mb-4">
-                                            <div className="product-item cursor-pointer w-100" onClick={handleNavigate}>
+                                            <div className="product-item cursor-pointer w-100 position-relative" onClick={handleNavigate}>
+                                            {product.sale && <img style={{top: '16px', left: '16px'}} 
+                                            className="position-absolute" 
+                                            src={Chip} width={'99'} height={'30'}/>}
                                                 <img className="product-item-img w-100" src={product.img} />
                                                 <div className="product-item-content text-center">
                                                     <div className="title">Service title</div>
