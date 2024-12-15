@@ -137,7 +137,7 @@ const Product = () => {
                             <div className="row">
                                 {dataProduct.length > 0 && dataProduct.map((product, index) => {
                                     return (
-                                        <div key={index} className="col-lg-4 col-md-6 d-flex mb-4">
+                                        <div key={index} className="col-lg-4 col-md-6 d-flex" style={{marginBottom: '72px'}}>
                                             <div className="product-item cursor-pointer w-100 position-relative" onClick={handleNavigate}>
                                             {product.sale && <img style={{top: '16px', left: '16px'}} 
                                             className="position-absolute" 
@@ -159,7 +159,7 @@ const Product = () => {
                                     );
                                 })}
                             </div>
-                            <div className=" d-flex justify-content-center mt-5">
+                            <div className=" d-flex justify-content-center">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
                                         <li class="page-item disabled"><a className="page-link" >{'<'} Zurück</a></li>

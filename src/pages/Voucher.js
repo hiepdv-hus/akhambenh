@@ -43,10 +43,6 @@ const Voucher = () => {
             id: 8,
             img: Home1
         },
-        {
-            id: 9,
-            img: Home1
-        },
     ]
 
     const handleNavigate = () => {
@@ -76,14 +72,14 @@ const Voucher = () => {
                             <img className="ms-2" src={SortAscending} width={'20px'}/>
                         </div>
                     </div>
-                    <div className="row mt-5">
+                    <div className=" mt-5">
                         <div className="row">
                             {dataProduct.length > 0 && dataProduct.map((product, index) => {
                                 return (
-                                    <div key={index} className="col-lg-3 col-md-6 d-flex mb-4">
-                                        <div className="product-item cursor-pointer  w-100" onClick={handleNavigate}>
+                                    <div key={index} className="col-lg-3 col-md-6 d-flex" style={{marginBottom: '72px'}}>
+                                        <div className="product-item cursor-pointer w-100" onClick={handleNavigate}>
                                             <img className="product-item-img w-100" src={product.img} />
-                                            <div className="product-item-content text-center">
+                                            <div className="product-item-content text-center w-100">
                                                 <div className="title">Service title</div>
                                                 <div className="txt">200€</div>
                                                 <div style={{color: '#626664'}} className="txt d-flex align-items-center justify-content-center">
@@ -99,7 +95,7 @@ const Voucher = () => {
                                 );
                             })}
                         </div>
-                        <div className=" d-flex justify-content-center mt-5">
+                        <div className=" d-flex justify-content-center">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item disabled"><a className="page-link" >{'<'} Zurück</a></li>

@@ -311,7 +311,6 @@ font-size: 18px;
 
 footer {
   background-color: #F7F6F2;
-  margin-top: 80px;
   padding: 56px 0;
 }
 .footer-lst {
@@ -614,6 +613,9 @@ input:-ms-input-placeholder {
    gap: 56px;
 }
 .contact-form input {
+  height: 40px;
+}
+.product-banner input {
   height: 40px;
 }
 @media screen and (max-width: 991px) {
