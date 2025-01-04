@@ -9,6 +9,7 @@ import Voucher from "./pages/Voucher";
 import VoucherDetail from "./pages/VoucherDetail";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Test from "./pages/Test";
 
 function App() {
   const Layout = () => {
@@ -29,6 +30,7 @@ function App() {
   return (
     <Router>
       <Routes>
+      <Route path="/test" element={<Test />} />
         {/* Sử dụng layout component */}
         <Route path="/" element={<Layout />}>
           {/* Các route con */}
@@ -39,7 +41,6 @@ function App() {
           <Route path="/voucher-detail" element={<VoucherDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
-          {/* <Route path="/cuoc-hen" element={<CuocHen />} /> */}
         </Route>
       </Routes>
     </Router>
